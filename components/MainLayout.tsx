@@ -1,8 +1,11 @@
 import React from "react";
 import MusicItem from "./mainLayout/MusicItem";
 import LibrarySongItem from "./mainLayout/LibrarySongItem";
+import zingApi from "@/services/zingApi";
 
-const MainLayout = () => {
+const MainLayout = async () => {
+  const data: any = await zingApi.getTop100();
+  console.log(data);
   return (
     <div className="container">
       <div className="heading">

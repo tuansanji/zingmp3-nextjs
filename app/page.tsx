@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import MainLayout from "@/components/MainLayout";
 import Sidebar from "@/components/Sidebar";
 
+import "antd/dist/reset.css";
+
 export default function Home() {
   return (
     <main className="">
